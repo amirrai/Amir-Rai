@@ -3,68 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aMir's C++ Portfolio</title>
+    <title>aMir's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="header.css">
-<link rel="stylesheet" href="hero.css">
-<link rel="stylesheet" href="skills.css">
-<link rel="stylesheet" href="projects.css">
-<link rel="stylesheet" href="contact.css">
-<link rel="stylesheet" href="footer.css">
-
 </head>
 <body>
     <header>
         <nav>
-            <h1>aMir</h1>
-            <ul>
+            <div class="logo">aMir</div>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="hero">
+            <h1>Hello, I'm a C++ Programmer</h1>
+            <p>Building efficient and modern software solutions</p>
+        </div>
     </header>
-
-    <section id="hero">
-        <h2>Hi, I'm aMir</h2>
-        <p>C++ Programmer | Software Developer | Problem Solver</p>
-        <a href="#projects" class="btn">See My Work</a>
-    </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>
-            I'm a passionate C++ programmer with experience in software development, data structures, algorithms, and competitive programming. I love building efficient and scalable solutions.
-        </p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">C++</div>
-            <div class="skill">STL & Algorithms</div>
-            <div class="skill">OOP</div>
-            <div class="skill">Data Structures</div>
-            <div class="skill">Problem Solving</div>
-            <div class="skill">Git & GitHub</div>
-        </div>
+        <p>Hello! I'm a passionate C++ programmer. I love building projects that solve real-world problems and exploring new technologies.</p>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>My Projects</h2>
         <div class="projects-container">
             <div class="project-card">
                 <h3>Project 1</h3>
-                <p>Brief description of your C++ project here.</p>
-                <a href="#">View Code</a>
+                <p>Short description of project 1.</p>
+                <a href="#">View Project</a>
             </div>
             <div class="project-card">
                 <h3>Project 2</h3>
-                <p>Brief description of your C++ project here.</p>
-                <a href="#">View Code</a>
+                <p>Short description of project 2.</p>
+                <a href="#">View Project</a>
             </div>
-            <!-- Add more projects -->
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Short description of project 3.</p>
+                <a href="#">View Project</a>
+            </div>
         </div>
     </section>
 
@@ -74,7 +54,7 @@
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <button type="submit">Send</button>
         </form>
     </section>
 
