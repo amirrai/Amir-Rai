@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amir - Official</title>
+    <title>aMir - Official</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Global Styles */
@@ -91,10 +91,17 @@
             padding: 1.2rem 0;
         }
 
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--primary-color);
+       .logo a {
+    color: #fff; /* text color */
+    text-decoration: none; /* removes underline */
+    font-size: 1.5rem; /* make it bigger */
+    font-weight: bold; /* bold text */
+    transition: color 0.3s; /* smooth hover effect */
+}
+
+.logo a:hover {
+    color: #00aaff; /* color changes on hover */
+}
         }
 
         .nav-links {
@@ -425,7 +432,9 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <div class="logo">Amir<span></span></div>
+                <div class="logo">
+    <a href="https://raiamir.com.np" target="_blank">aMir</a>
+</div>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -444,7 +453,7 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>Hi, I'm <span>Amir</span></h1>
+                <h1>Hi, I'm <span>aMir</span></h1>
                 <p>I'm a passionate developer who loves to create amazing web experiences and share knowledge with others. Welcome to my portfolio!</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn">View My Work</a>
@@ -562,10 +571,10 @@
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" placeholder="Amir" required>
+                            <input type="text" placeholder="aMir" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="raiamir299@gmail.com" required>
+                            <input type="email" placeholder="email@example.com" required>
                         </div>
                         <div class="form-group">
                             <input type="text" placeholder="Subject" required>
@@ -584,7 +593,9 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="logo">CodeWith<span>You</span></div>
+                <div class="logo">
+    <a href="https://raiamir.com.np" target="_blank">aMir</a>
+</div>
                 <ul class="footer-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -592,7 +603,7 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <p>&copy; 2023 Amir. All rights reserved.</p>
+                <p>&copy; 2023 aMir. All rights reserved.</p>
             </div>
         </div>
     </footer>
