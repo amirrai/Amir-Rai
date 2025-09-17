@@ -189,17 +189,57 @@
         .about-image {
             flex: 1;
             text-align: center;
+            position: relative;
         }
 
-        .about-image img {
-            max-width: 100%;
-            border-radius: 10px;
+        .profile-photo {
+            width: 100%;
+            max-width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Photo Gallery Section */
+        .gallery {
+            background: #f9f9f9;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            height: 250px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.1);
         }
 
         /* Skills Section */
         .skills {
-            background: #f9f9f9;
+            background: white;
         }
 
         .skills-container {
@@ -234,7 +274,7 @@
 
         /* Projects Section */
         .projects {
-            background: white;
+            background: #f9f9f9;
         }
 
         .projects-container {
@@ -281,7 +321,7 @@
 
         /* Contact Section */
         .contact {
-            background: #f9f9f9;
+            background: white;
         }
 
         .contact-container {
@@ -413,6 +453,11 @@
             .about-content {
                 flex-direction: column;
             }
+            
+            .profile-photo {
+                max-width: 280px;
+                height: 280px;
+            }
 
             .section-title {
                 font-size: 1.8rem;
@@ -429,6 +474,7 @@
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Photos</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -444,7 +490,7 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>Hi, I'm <span>Your Name</span></h1>
+                <h1>Hi, I'm <span>Alex Johnson</span></h1>
                 <p>I'm a passionate developer who loves to create amazing web experiences and share knowledge with others. Welcome to my portfolio!</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn">View My Work</a>
@@ -467,7 +513,28 @@
                     <a href="#contact" class="btn">Let's Talk</a>
                 </div>
                 <div class="about-image">
-                    <img src="https://via.placeholder.com/400x400" alt="Your Name">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Alex Johnson" class="profile-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">My <span>Photos</span></h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Coding Workshop" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80" alt="Programming Session" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80" alt="Team Collaboration" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80" alt="Web Development" class="gallery-img">
                 </div>
             </div>
         </div>
@@ -549,9 +616,9 @@
                 <div class="contact-info">
                     <h3>Get In Touch</h3>
                     <p>Feel free to reach out if you have any questions, collaboration ideas, or just want to connect!</p>
-                    <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                    <p><i class="fas fa-envelope"></i> alex.johnson@example.com</p>
                     <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Your City, Country</p>
+                    <p><i class="fas fa-map-marker-alt"></i> New York, USA</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-github"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -588,11 +655,12 @@
                 <ul class="footer-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Photos</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <p>&copy; 2023 Your Name. All rights reserved.</p>
+                <p>&copy; 2023 Alex Johnson. All rights reserved.</p>
             </div>
         </div>
     </footer>
