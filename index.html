@@ -3,51 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aMir's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>aMir Tutorials</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
+    <!-- Header -->
     <header>
         <nav>
-            <div class="logo">aMir</div>
+            <div class="logo"><a href="#top">aMir</a></div>
             <ul class="nav-links">
+                <li><a href="#tutorials">Tutorials</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="hero">
-            <h1>Hello, I'm a C++ Programmer</h1>
-            <p>Building efficient and modern software solutions</p>
+            <h1>Learn Programming with aMir</h1>
+            <p>Beginner to Advanced Tutorials on C++, Web Development, and More</p>
         </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a passionate C++ programmer. I love building projects that solve real-world problems and exploring new technologies.</p>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Short description of project 1.</p>
-                <a href="#">View Project</a>
+    <!-- Tutorials Section -->
+    <section id="tutorials">
+        <h2>Latest Tutorials</h2>
+        <div class="tutorials-container">
+            <div class="tutorial-card">
+                <h3>C++ Basics</h3>
+                <p>Learn variables, loops, and functions in C++.</p>
+                <a href="#">Read More</a>
             </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Short description of project 2.</p>
-                <a href="#">View Project</a>
+            <div class="tutorial-card">
+                <h3>HTML & CSS</h3>
+                <p>Build modern websites with HTML5 and CSS3.</p>
+                <a href="#">Read More</a>
             </div>
-            <div class="project-card">
-                <h3>Project 3</h3>
-                <p>Short description of project 3.</p>
-                <a href="#">View Project</a>
+            <div class="tutorial-card">
+                <h3>JavaScript Essentials</h3>
+                <p>Learn JS fundamentals and DOM manipulation.</p>
+                <a href="#">Read More</a>
             </div>
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about">
+        <h2>About aMir</h2>
+        <p>I am a C++ programmer sharing tutorials and coding resources to help beginners and enthusiasts learn programming effectively.</p>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
         <form id="contact-form">
@@ -58,8 +62,9 @@
         </form>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 aMir. All Rights Reserved.</p>
+        <p>&copy; 2025 aMir Tutorials. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
