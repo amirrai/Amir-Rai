@@ -139,6 +139,9 @@
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
+            color: var(--secondary);
+        }
+        .logo:hover {
             color: var(--primary);
         }
 
@@ -165,11 +168,13 @@
 
         /* Hero Section */
         .hero {
+            text-align: center;
             padding: 9rem 0 2rem;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: linear-gradient(--white);
         }
 
         .hero-container {
+            text-align: center;
             display: grid;
             grid-template-columns: 1fr;
             align-items: center;
@@ -252,7 +257,7 @@
 
         /* Skills Section */
         .skills {
-            background: #f9f9f9;
+            background: white;
         }
 
         .skills-container {
@@ -602,8 +607,10 @@
                 padding: 1.5rem;
             }
         }
+        
     </style>
 </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 <body>
     <!-- Header -->
     <header class="header" id="header">
@@ -631,7 +638,7 @@
         <div class="container hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">Hi, I'm <span>Amir Rai</span></h1>
-                <p class="hero-description">A passionate front-end developer specializing in creating responsive, user-friendly websites and applications with modern technologies.</p>
+                <p class="hero-description">A passionate C++ game developer with a knack for creating high-performance, immersive gaming experiences. Skilled in designing, coding, and optimizing game engines, and always ready to push the boundaries of gameplay and graphics.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn">View My Work</a>
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
@@ -650,10 +657,10 @@
             
             <div class="about-container">
                 <div class="about-content">
-                    <h2>Front-end Developer & UI Designer</h2>
-                    <p>Hello! I'm Alex, a passionate front-end developer with over 5 years of experience building responsive websites and web applications. I specialize in JavaScript, React, and modern CSS techniques.</p>
-                    <p>My journey in web development started during college, and I've been hooked ever since. I enjoy creating intuitive, user-friendly interfaces that solve real problems.</p>
-                    <p>When I'm not coding, you can find me hiking, reading tech blogs, or experimenting with new web technologies. I believe in continuous learning and always stay updated with the latest industry trends.</p>
+                    <h2>Game Developer & C/C++ Expert</h2>
+                    <p>I am a dedicated C and C++ programmer with over 5 years of experience in professional game development.</p>
+                    <p>My journey began with a love for programming, evolving into 5+ years of experience in C and C++. Specializing in Unreal Engine, I now create high-quality, immersive video games that blend technical precision with creative storytelling.</p>
+                    <p>I focus on crafting polished, visually stunning experiences that captivate players. Game development isn't just my career—it’s the creative journey I’m proud to live every day.</p>
                     <a href="#contact" class="btn">Get In Touch</a>
                 </div>
                 <div class="about-image">
@@ -671,35 +678,28 @@
             <div class="skills-container">
                 <div class="skill-card">
                     <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h3 class="skill-title">HTML5</h3>
-                    <p class="skill-description">Semantic markup, accessibility, and modern HTML5 APIs.</p>
+                    <i class="fas fa-gamepad colored"></i>                    
+                </div>
+                    <h3 class="skill-title">GameDev</h3>
+                    <p class="skill-description">Game development encompasses design, Coding, Testing to create immersive experiences, Refine gameplay.</p>
                 </div>
                 
                 <div class="skill-card">
                     <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
+                        <i class="devicon-cplusplus-plain colored"></i>
                     </div>
-                    <h3 class="skill-title">CSS3</h3>
-                    <p class="skill-description">Flexbox, Grid, animations, and responsive design principles.</p>
+                    <h3 class="skill-title">C++</h3>
+                    <p class="skill-description">C++ offers high performance, Memory control, OOP principles, Cross-platform compatibility.</p>
                 </div>
                 
                 <div class="skill-card">
                     <div class="skill-icon">
-                        <i class="fab fa-js"></i>
+                        <i class="devicon-unrealengine-plain colored"></i>
                     </div>
-                    <h3 class="skill-title">JavaScript</h3>
-                    <p class="skill-description">ES6+, DOM manipulation, async programming, and modern JS features.</p>
+                    <h3 class="skill-title">Unreal E5</h3>
+                    <p class="skill-description">Unreal Engine 5 offers stunning visuals, Real-time rendering, Powerful tools, Seamless cross-platform development.</p>
                 </div>
-                
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <h3 class="skill-title">React</h3>
-                    <p class="skill-description">Component-based architecture, hooks, context API, and Redux.</p>
-                </div>
+               
             </div>
         </div>
     </section>
@@ -712,33 +712,33 @@
             <div class="projects-container">
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-envelope"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">E-Commerce Website</h3>
-                        <p class="project-description">A fully responsive e-commerce platform built with React, Node.js, and MongoDB.</p>
-                        <a href="#" class="btn">View Project</a>
+                        <h3 class="project-title">First 2D Game</h3>
+                        <p class="project-description">I created a 2D game in 2021, If you're interested in learning 2D game development, feel free to contact me.</p>
+                        <a href="#" class="btn">Send Message</a>
                     </div>
                 </div>
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-tasks"></i>
+                        <i class="fas fa-gamepad"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Task Management App</h3>
-                        <p class="project-description">A drag-and-drop task management application with real-time updates.</p>
-                        <a href="#" class="btn">View Project</a>
+                        <h3 class="project-title">3D Video Game</h3>
+                        <p class="project-description">I created a 3D game in 2024. If you want to play the game or learn 3D game development, feel free to contact me.</p>
+                        <a href="#" class="btn">Play Now</a>
                     </div>
                 </div>
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-weather"></i>
+                        <i class="fas font-family">Go</i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Weather Dashboard</h3>
-                        <p class="project-description">A weather application that displays current and forecast data for any location.</p>
+                        <h3 class="project-title">All Projects</h3>
+                        <p class="project-description">This is my entire project, including notes and source code. Click 'View Project' to see everything.</p>
                         <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
@@ -757,15 +757,15 @@
                     <div class="contact-details">
                         <div class="contact-detail">
                             <i class="fas fa-envelope"></i>
-                            <span>alex.johnson@example.com</span>
+                            <span>amirsampang88@gmail.com</span>
                         </div>
                         <div class="contact-detail">
                             <i class="fas fa-phone"></i>
-                            <span>+1 (234) 567-8901</span>
+                            <span>+977 [9804359256]</span>
                         </div>
                         <div class="contact-detail">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>San Francisco, CA</span>
+                            <span>Dharan, Nepal</span>
                         </div>
                     </div>
                     <div class="social-links">
