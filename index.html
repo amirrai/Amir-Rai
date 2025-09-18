@@ -8,8 +8,8 @@
     <style>
         /* CSS Variables */
         :root {
-            --primary: #6c63ff;
-            --secondary: #4a44c9;
+            --primary: rgb(14, 128, 138);
+            --secondary: black;
             --dark: #1f1f1f;
             --light: #f5f5f5;
             --gray: #777;
@@ -30,6 +30,8 @@
         }
 
         body {
+            margin: 0;
+            padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: var(--dark);
@@ -53,7 +55,7 @@
         }
 
         .container {
-            width: 90%;
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 15px;
@@ -178,7 +180,8 @@
             display: grid;
             grid-template-columns: 1fr;
             align-items: center;
-            gap: 3rem;
+            gap: 2rem;
+            
         }
 
         .hero-content {
@@ -637,7 +640,7 @@
     <section class="hero section" id="home">
         <div class="container hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span>Amir Rai</span></h1>
+                <h1 class="hero-title">My <span>Portfolio</span></h1>
                 <p class="hero-description">A passionate C++ game developer with a knack for creating high-performance, immersive gaming experiences. Skilled in designing, coding, and optimizing game engines, and always ready to push the boundaries of gameplay and graphics.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn">View My Work</a>
